@@ -1,11 +1,13 @@
-import React from 'react';
-
 const Links = () => {
-    return (
-        <div className='links'>
-            Links
-        </div>
-    );
+  const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
+
+  return <div className="links">
+    {items.map(item => (
+    <a key={item} href={`#${item}`}>
+        {item}
+        </a>
+        ))}
+  </div>;
 };
 
 export default Links;
