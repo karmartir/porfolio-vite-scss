@@ -67,22 +67,23 @@
             width: 50%;
             color: #ffffff15;
             position: absolute;
-            font-size: 50vh;
-            bottom: -120px;
+            font-size: 30vh;
+            font-weight: normal;
+            bottom: -88px;
             white-space: nowrap;
         }
-        //   .first-image{
-          
-        //     width: 100%;
-        //     aspect-ratio:initial;
-        //     filter:opacity(35%)  blur(10px);
-        //     transition: 2s ease;
-        //     cursor: pointer;
-        //   }
+          .first-image{
+            width: 100%;
+            aspect-ratio:initial;
+            // filter:opacity(35%)  blur(10px);
+            // transition: 2s ease;
+        
+            // cursor: pointer;
+          }
         //   .first-image:hover{
-            
+           
         //     filter: none;
-        //     // scale: 99%;
+          
          
         //   }
 }
