@@ -13,7 +13,7 @@ const Navbar = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{duration:0.5}}
         >
-          Kar<b>M</b>a
+          Kar<b className="m-logo">M</b>a
         </motion.span>
         <div className="social">
           <a href="#">
