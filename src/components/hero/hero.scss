@@ -10,6 +10,7 @@
             max-width: 1366px;
             height: 100%;
             margin: auto;
+           
 
 
             .textContainer{
@@ -19,6 +20,8 @@
                 flex-direction: column;
                 justify-content: center;
                 gap: 40px;
+        
+              
 
                 h2{
                     font-size: 30px;
@@ -40,7 +43,7 @@
                         font-weight: 300;
                     }
                 }
-
+                
                 img{
                 width: 50px;
                 }
@@ -57,10 +60,19 @@
             display: flex;
             flex-direction: row-reverse;
             height: 99%;
+            width: 65%;
             position: absolute;
             // top: 0;
             bottom: 0;
-            right: 10px;    
+            right: 10px; 
+ 
+            
+
+            img{
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+            }
         }
 
         .slidingTextContainer{
