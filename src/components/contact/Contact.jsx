@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./contact.scss";
 import { motion } from "framer-motion";
 
@@ -17,6 +18,40 @@ const variants = {
 };
 
 const Contact = () => {
+    const honeyLuk = 'e1fa8236-51e3-477c-9be3-7ed0bec2356d'
+    const [result, setResult] = useState("");
+    if (result.length !== 0) {
+      setTimeout(() => {
+        setResult("");
+      }, 4000);
+    }
+  
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", `${honeyLuk}`);
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        setResult("Thank you. Your message has been sent successfully");
+      //   alert('"Email sent successfully"');
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    };
+
+
+
   return (
     <motion.div
       className="contact"
@@ -70,15 +105,22 @@ const Contact = () => {
           </svg>
         </motion.div>
         <motion.form
+            onSubmit={onSubmit}
           action=""
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" />
-          <input type="email" required placeholder="Email" name="email" />
-          <textarea name="textarea" rows="8" placeholder="Message" />
-          <button>Submit</button>
+          <input type="text" required placeholder="Enter your name" name="name" />
+          <input type="email" required placeholder="Enter your email" name="email" />
+          <textarea  rows="8" required placeholder="Write your message here" name="message" />
+          { result.length !==0 
+        ? <span className="message">Status:{result}</span>
+        : ''
+    }
+            <button type="submit" className="contact-submit">
+            Submit now
+          </button>
         </motion.form>
       </div>
     </motion.div>
