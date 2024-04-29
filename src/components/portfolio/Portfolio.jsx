@@ -13,9 +13,9 @@ const items = [
   {
     id: 2,
     title: "Project 2",
-    img: "./project2-hi-res.png",
-    desc: "Design example made with love",
-    url: "https://www.behance.net/gallery/161746913/Project-1" // Demo URL for Project 2
+    img: "./project_2.png",
+    desc: "The Fitness club demo",
+    url: "https://gym-project-apr-24.netlify.app/" // Demo URL for Project 2
   },
   {
     id: 3,
