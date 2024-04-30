@@ -67,7 +67,7 @@ const isInView = useInView(ref, {margin: '-100px'})
             communication tools and online platforms to effectively collaborate
             with remote teams and deliver exceptional results.
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
 
         <motion.div
@@ -80,7 +80,7 @@ const isInView = useInView(ref, {margin: '-100px'})
             between virtual and in-person settings to maximize advantages and
             maintain effective communication and collaboration.
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
 
         <motion.div
@@ -93,7 +93,7 @@ const isInView = useInView(ref, {margin: '-100px'})
             adaptability to establish strong working relationships, contributing
             to a positive and collaborative team atmosphere.
           </p>
-          <button>Go</button>
+          {/* <button>Go</button> */}
         </motion.div>
       </motion.div>
     </motion.div>
