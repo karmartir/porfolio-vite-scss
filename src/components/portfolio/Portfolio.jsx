@@ -28,8 +28,15 @@ const items = [
     id: 4,
     title: "Project 4",
     img: "./project_4h.png",
-    desc: "BearBrick Black VIP -PoSter design concept",
+    desc: "BearBrick Black VIP - A poster design concept",
     url:"https://www.behance.net/gallery/162482541/Sample"
+  },
+  {
+    id: 5,
+    title: "Project 5",
+    img: "./project_5.png",
+    desc: "Property Pulse",
+    url:"https://property-portfolio-pulse.netlify.app"
   },
 ];
 
