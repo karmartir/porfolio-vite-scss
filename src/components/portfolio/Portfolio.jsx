@@ -7,7 +7,7 @@ const items = [
     id: 1,
     title: "Project 1",
     img: "./project_1.png",
-    desc: "Internet store project",
+    desc: "Online food store project",
     url: "https://neon-pika-975659.netlify.app/" // Demo URL for Project 1
   },
   {
@@ -35,8 +35,8 @@ const items = [
     id: 5,
     title: "Project 5",
     img: "./project_5.png",
-    desc: "Property Pulse",
-    url:"https://property-portfolio-pulse.netlify.app"
+    desc: "Property Pulse Project. For the best experience authorize via gmail and you can use all functionality",
+    url:"https://property-pulse-five-sigma.vercel.app"
   },
 ];
 
