@@ -25,12 +25,20 @@ const itemVariants = {
 };
 
 const Links = ({setOpen}) => {
-  const items = ["Homepage", "Services", "Portfolio", "Contact"];
+  const items = ["Homepage", "Services", "Portfolio", "Contact", "About me"];
 
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
-        <motion.a
+        item==='About me' ? ( <motion.a
+          key={item}
+          href={`https://karma-portfolio-details.netlify.app/`}
+          variants={itemVariants}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95, color: "red" }}
+        >
+          <span onClick={() => setOpen(!open)}> {item}</span>
+        </motion.a>) : (<motion.a
           key={item}
           href={`#${item}`}
           variants={itemVariants}
@@ -38,7 +46,8 @@ const Links = ({setOpen}) => {
           whileTap={{ scale: 0.95, color: "red" }}
         >
           <span onClick={() => setOpen(!open)}> {item}</span>
-        </motion.a>
+        </motion.a>)
+        
       ))}
     </motion.div>
   );
