@@ -42,7 +42,7 @@ const items = [
     id: 6,
     title: "Project 6",
     img: "./lounchpoint.png",
-    desc: "This project was developed by Garen Martirosyan. using React, Vite, React Router, and Bootstrap, in collaboration with UI/UX designer Hrant Aslanyan, who crafted the visuals using Figma and Photoshop. Together, we combined clean, functional code with elegant, user-focused design.\n",
+    desc: "This project was developed by Garen Martirosyan using React, Vite, React Router, and Bootstrap, in collaboration with UI/UX designer Hrant Aslanyan, who crafted the visuals using Figma and Photoshop. Together, we combined clean, functional code with elegant, user-focused design.\n",
     url:"https://launchpoint.netlify.app"
   },
 ];
