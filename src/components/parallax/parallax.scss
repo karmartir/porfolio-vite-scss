@@ -20,7 +20,7 @@
   }
 
   .mountains {
-    background-image: url("/mountains.png");
+    background-image: url("public/images/mountains.png");
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -33,7 +33,7 @@
      }
   }
   .stargate{
-    background-image: url('/stargate.svg');
+    background-image: url('public/images/stargate.svg');
     background-size: cover;
     background-position: top;
     width: 200px;
@@ -43,7 +43,7 @@
     z-index: 2;
   }
   .planets {
-    background-image: url("/planets.png");
+    background-image: url("public/images/planets.png");
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -56,7 +56,7 @@
      }
   }
   .stars {
-    background-image: url("/stars.png");
+    background-image: url("/public/images/stars.png");
     background-size: cover;
     background-position: bottom;
     width: 100%;

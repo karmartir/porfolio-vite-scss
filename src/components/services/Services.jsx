@@ -43,7 +43,7 @@ const isInView = useInView(ref, {margin: '-100px'})
       </motion.div>
       <motion.div className="titleContainer"  variants={variants}>
         <div className="title">
-          <img src="/office.jpg" alt="" />
+          <img src="/images/office.jpg" alt="" />
           <h1>
             <motion.b whileHover={{color: 'orange'}}>Unique</motion.b> Ideas
           </h1>
