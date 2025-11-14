@@ -32,16 +32,7 @@
       background-repeat: no-repeat;
      }
   }
-  .stargate{
-    background-image: url('public/images/stargate.svg');
-    background-size: cover;
-    background-position: top;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    bottom: 0;
-    z-index: 2;
-  }
+
   .planets {
     background-image: url("public/images/planets.png");
     background-size: cover;

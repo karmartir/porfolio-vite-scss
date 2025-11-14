@@ -5,7 +5,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     title: "E-Commerce",
-    img: "./ecommerce.png",
+    img: "/images/ecommerce.png",
     desc:
       "A full-stack eCommerce application built from scratch with the MERN stack (MongoDB, Express, React, Node.js)." +
       "User authentication & authorization (JWT) * Admin dashboard for managing products, users, and orders * Product search, pagination, and reviews" +
@@ -15,13 +15,13 @@ const items = [
   },
   {
     title: "Launchpoint",
-    img: "./launchpoint.png",
+    img: "/images/launchpoint.png",
     desc: "This project was developed by Garen Martirosyan using React, Vite, React Router, and Bootstrap, in collaboration with UI/UX designer Hrant Aslanyan, who crafted the visuals using Figma and Photoshop. Together, we combined clean, functional code with elegant, user-focused design.\n",
     url: "https://launchpoint.netlify.app",
   },
   {
     title: "Gym landing page",
-    img: "./project_2gym.png",
+    img: "/images/project_2gym.png",
     desc: "A demo landing page for a fitness club.",
     url: "https://gym-project-apr-24.netlify.app/", // Demo URL for Project 2
   },
@@ -33,19 +33,19 @@ const items = [
   // },
   {
     title: "Real Estate Project",
-    img: "./project_5.png",
+    img: "/images/project_5.png",
     desc: "Property Pulse project. For the best experience, sign in with Gmail to access all features.",
     url: "https://property-pulse-five-sigma.vercel.app",
   },
   {
     title: "Chat App Concept",
-    img: "./project3-hi-res.png",
+    img: "/images/project3-hi-res.png",
     desc: "A chat messenger concept design.",
     url: "https://www.behance.net/gallery/162681601/CHATapp-concept-design", // Demo URL for Project 3
   },
   {
     title: "Online Food Store",
-    img: "./project_1.png",
+    img: "/images/project_1.png",
     desc: "An online food store application.",
     url: "https://neon-pika-975659.netlify.app/", // Demo URL for Project 1
   },
