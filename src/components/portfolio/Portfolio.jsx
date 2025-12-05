@@ -3,12 +3,30 @@ import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
+	{
+		title: "E-Commerce Store 2 (NEXT.js), ver. II",
+		img: "/images/store-2.png",
+		desc: "A modern full-stack eCommerce application rebuilt with Next.js (App Router) and a scalable backend. Features include secure user authentication & authorization (JWT and middleware protection) * Intuitive admin dashboard for managing products, users, and orders * Advanced product search, filtering, pagination, and real-time stock updates * Optimized shopping cart & checkout flow * Seamless Stripe payments (test mode) * Drag-and-drop product image uploads and automatic image optimization * Server-side rendering, performance, and SEO improvements that showcase clear advantages over the previous MERN version.",
+		note: "Styled with Tailwind CSS.\n" +
+			"Fully responsive design.\n" +
+			"Reusable components such as Navbar, Product Cards, and Layout wrappers.\n" +
+			"Supports dark, light, and system theme modes, automatically adapting to the user's system preference and allowing manual toggle between dark and light themes.Integrated PayPal & Stripe for online payments.\n" +
+			"Complete checkout flow implemented. Admin page for managing users and products.\n" +
+			"Product management.\n" +
+			"Orders overview.\n" +
+			"Admin area with stats & chart using Recharts. Next.js 14+ (App Router)\n" +
+			"React\n" +
+			"Tailwind CSS\n" +
+			"Prisma / PostgreSQL\n" +
+			"NextAuth ",
+		url: "https://prostore-s.vercel.app",
+	},
   {
-    title: "E-Commerce",
+    title: "E-Commerce (MERN)",
     img: "/images/ecommerce.png",
     desc:
       "A full-stack eCommerce application built from scratch with the MERN stack (MongoDB, Express, React, Node.js)." +
-      "User authentication & authorization (JWT) * Admin dashboard for managing products, users, and orders * Product search, pagination, and reviews" +
+      " User authentication & authorization (JWT) * Admin dashboard for managing products, users, and orders * Product search, pagination, and reviews" +
       " * Shopping cart & checkout process * PayPal & credit card payments * Product image upload and many more features.",
     note: "This project is hosted on Render’s free tier. The server goes to sleep when inactive, so the first load may take 1–2 minutes. Please be patient — once it wakes up, the app will run smoothly. PayPal purchases are intentionally set up in developer (sandbox) mode, so no real transactions occur.",
     url: "https://proshop-2061.onrender.com/",
@@ -38,12 +56,6 @@ const items = [
     url: "https://property-pulse-five-sigma.vercel.app",
   },
   {
-    title: "Chat App Concept",
-    img: "/images/project3-hi-res.png",
-    desc: "A chat messenger concept design.",
-    url: "https://www.behance.net/gallery/162681601/CHATapp-concept-design", // Demo URL for Project 3
-  },
-  {
     title: "Online Food Store",
     img: "/images/project_1.png",
     desc: "An online food store application.",
@@ -70,9 +82,9 @@ const Single = ({ item }) => {
 
   return (
     <section id="Portfolio">
-      <div className="container">
-        <div className="wrapper">
-          <div className="imgContainer" ref={ref}>
+      <div className="container" >
+        <div className="wrapper" >
+          <div className="imgContainer"  ref={ref}>
             <img src={item.img} alt="item image" />
           </div>
 
